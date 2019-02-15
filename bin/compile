@@ -16,7 +16,7 @@ if [ -f "$key_file" ]; then
 
 	mkdir "$HOME/.ssh"
 	cp "$key_file" "$HOME/.ssh/id_rsa"
-	ssh -oStrictHostKeyChecking=no -T git@github.com 2>&1 | indent
+	ssh -oStrictHostKeyChecking=no -T git@gitlab.com 2>&1 | indent
 	exit 0
 else
 	echo "-----> No SSH private key"
